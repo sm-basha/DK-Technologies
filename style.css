@@ -1,5 +1,6 @@
 /* font-family: 'Baloo Tamma 2', cursive;
-font-family: 'Red Rose', cursive; */
+font-family: 'Merriweather', serif;
+font-family: 'Red Rose', cursive;; */
 
 *{
     margin: 0;
@@ -7,20 +8,21 @@ font-family: 'Red Rose', cursive; */
     font-family: 'Baloo Tamma 2', cursive;
 }
 
-.innerImg    {
+.innerImg{
     width: 100%;
     height: 85vh;
 }
 
 /* NAVBAR */
 .navbar{
-    background-color: #6a2c70;
-    padding: 1%;
+    background-color: #324046;
+    padding: 0.3%;
     color: #fff;
 }
 .navbar-brand{
-    font-size: 2.5rem !important;
+    font-size: 1.8rem !important;
     font-family: 'Red Rose', cursive;
+    margin-left: 0.6%;
 }
 .navbar a{color: #fff;}
 .navbar a:hover{ border-bottom: 2px solid #181174;}
@@ -38,11 +40,22 @@ font-family: 'Red Rose', cursive; */
 }
 
 /* MAIN carousel */
-.carousel-caption h3{font-size: 3rem;}
+.carousel-caption h3{
+    font-size: 3.3rem;
+    font-family: 'Merriweather', serif;
+}
+.carousel-caption h1{
+    font-family: 'Merriweather', serif;
+}
+.carousel-caption a{
+    font-size: 17px;
+    margin-top: 1% 0;
+}
 .carousel-caption p{font-size: 1.2rem;}
 .carousel-caption{
     margin-bottom: 10% ;
     line-height: 2rem;
+    padding: 2%;
 }
 
 .dark:after{
@@ -54,12 +67,25 @@ font-family: 'Red Rose', cursive; */
     left: 0;
     right: 0;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 .ccd{
     background: rgba(0,0,0,0.6);
 }
+.dots{
+    display: block;
+        text-align: center;
+        margin: 4% 0;
+        font-family: 'typicons';
+        font-size: .875rem;
+        font-weight: 400;
+        letter-spacing: .1875rem;
+        color: #6a2c70;
+    }
+
+.session{ margin: 4% 0;}
+
 
 /* WHAT WE CAN DO */
 .card{margin-bottom: 1.5rem !important;}
@@ -69,19 +95,7 @@ font-family: 'Red Rose', cursive; */
 
 a.btn{color: #fff !important;}
 
-.dots:before{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: block;
-    text-align: center  ;
-    padding: 5% 0;
-    font-family: 'typicons';
-    font-size: .875rem;
-    font-weight: 400;
-    letter-spacing: .1875rem;
-    color: #6a2c70;
-    content: '\2B9E\2B9E\2B9E\2663\2B9C\2B9C\2B9C';
-}
+
 
 .circle{
     height: 100px;
@@ -91,12 +105,25 @@ a.btn{color: #fff !important;}
     color: #fff;
     margin: 0 auto;
     vertical-align: middle;
-    display: table-cell;
+    padding: 30px 0;
     text-align: center;
     font-family: 'Lemonada', cursive;
     font-size: 1.8rem;
 
 }
+
+/* TESTIMONIES */
+
+.carousel-indicators{
+    bottom: -50px;
+}
+
+.quote{
+    bottom: 0;
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
 
 
 .card1,.card2,.card3,.card4,.card5,.card6,.abtImg,.abtImg1,.abtImg2,.abtMat1,.abtMat2 {

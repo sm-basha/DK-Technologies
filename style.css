@@ -8,14 +8,17 @@ font-family: 'Red Rose', cursive;; */
     font-family: 'Baloo Tamma 2', cursive;
 }
 
+
+
+
 .innerImg{
     width: 100%;
-    height: 85vh;
+    height: 75vh;
 }
 
 /* NAVBAR */
 .navbar{
-    background-color: #324046;
+    background-color: #6a2c70;
     padding: 0.3%;
     color: #fff;
 }
@@ -32,7 +35,7 @@ font-family: 'Red Rose', cursive;; */
 
 .navbar-toggler-icon {
     color: aqua;
-    background-color: rgb(95 81 97);
+    background-color: #901192;
 }
 .dropdown-item{
     font-size: 1.3rem;
@@ -205,6 +208,7 @@ a.btn{color: #fff !important;}
 @media(max-width:400px){
 *{text-align: center;}
     .navbar a{padding: 0;}
+    .brand h1  {font-size: 1.5rem;}
     .navbar-brand{font-size: 1rem !important;}
     .row{margin:0;}
     .abtMat1,.abtMat2{padding: 0;}
@@ -214,31 +218,23 @@ a.btn{color: #fff !important;}
     .carousel-caption a{ font-size: 13px;margin: 5px;}
 }
 
-
-
-
-
 @media(max-width:780px) and (min-width:402px){
     .card-body{padding: 1.25rem 0.4rem;
     }
-    /* .abtImg{height: 100%;} */
+    .brand h1  {font-size: 2.2rem;}
     .card-body h4{
         font-size: 1.2rem;
         font-weight: 600;}
         .ccd{background: rgba(0,0,0,0.2);}
     .carousel-caption{width: 100%; margin: 0;left: 0;}
-    .carousel-caption h1, h3{ font-size: 2rem!important;}
+    .carousel-caption h1, h3, .brand{ font-size: 2rem!important;}
     .carousel-caption a{ font-size: 13px;margin: 5px;}
 
 }
 
-
-
-
-
-
 @media(max-width:1024px) and (min-width:768px){
   .abtImg{height: 100%;}
   .carousel-caption h3{ font-size: 3rem;}
+  .brand h1  {font-size: 2.5rem;}
 
 }

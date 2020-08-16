@@ -208,8 +208,15 @@ a.btn{color: #fff !important;}
     .navbar-brand{font-size: 1rem !important;}
     .row{margin:0;}
     .abtMat1,.abtMat2{padding: 0;}
-    .footer span{float: inherit;}
+    .ccd{background: rgba(0,0,0,0.2);}
+    .carousel-caption{width: 100%; margin: 0;left: 0;}
+    .carousel-caption h1, h3{ font-size: 2rem!important;}
+    .carousel-caption a{ font-size: 13px;margin: 5px;}
 }
+
+
+
+
 
 @media(max-width:780px) and (min-width:402px){
     .card-body{padding: 1.25rem 0.4rem;
@@ -218,7 +225,18 @@ a.btn{color: #fff !important;}
     .card-body h4{
         font-size: 1.2rem;
         font-weight: 600;}
+        .ccd{background: rgba(0,0,0,0.2);}
+    .carousel-caption{width: 100%; margin: 0;left: 0;}
+    .carousel-caption h1, h3{ font-size: 2rem!important;}
+    .carousel-caption a{ font-size: 13px;margin: 5px;}
+
 }
+
+
+
+
+
+
 @media(max-width:1024px) and (min-width:768px){
   .abtImg{height: 100%;}
   .carousel-caption h3{ font-size: 3rem;}

@@ -5,7 +5,6 @@ font-family: 'Red Rose', cursive;; */
 *{
     margin: 0;
     padding: 0;
-    right:0;
     font-family: 'Baloo Tamma 2', cursive;
 }
 
@@ -13,14 +12,9 @@ font-family: 'Red Rose', cursive;; */
     padding: 10px 10px;
     margin: 2px 0 0;
 }
-.flash{
-    animation: glowing 2500ms infinite;
+.flash, .tada{
+    animation:  2500ms infinite;
 }
-  @keyframes glowing {
-    0% {box-shadow: 0 0 3px #6a2c70; }
-    50% { box-shadow: 0 0 40px #6a2c70; }
-    100% {  box-shadow: 0 0 3px #6a2c70; }
-  }
 
 .innerImg{
     width: 100%;
@@ -237,7 +231,7 @@ a.btn{color: #fff !important;}
 @media(max-width:780px) and (min-width:402px){
     #header{text-align: center;}
     .card-body{padding: 1.25rem 0.4rem;}
-    .brand h1  {font-size: 2.2rem;}
+    .brand h1 {font-size: 2.2rem;}
     .card-body h4{font-size: 1.2rem;
         font-weight: 600;}
     .ccd{background: rgba(0,0,0,0.2);}
@@ -276,20 +270,3 @@ a.btn{color: #fff !important;}
 .address h3{font-weight: 600}
 .add a, .add p{color: #6a2c70; font-weight: 600;}
 
-
-
-
-.headerButton {
-    animation: shake 4s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes shake {
-    47% { transform: translate(-10px, 0px) rotate(-2deg); }
-    48% { transform: translate(10px, 0px) rotate(2deg); }
-    49% { transform: translate(0px) rotate(0deg); }
-    50% { transform: translate(-10px, 0px) rotate(-2deg); }
-    51% { transform: translate(10px, 0px) rotate(2deg); }
-    52% { transform: translate(0px) rotate(0deg); }
-    53% { transform: translate(-10px, 0px) rotate(-2deg); }
-  }

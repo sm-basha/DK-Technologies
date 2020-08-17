@@ -5,11 +5,22 @@ font-family: 'Red Rose', cursive;; */
 *{
     margin: 0;
     padding: 0;
+    right:0;
     font-family: 'Baloo Tamma 2', cursive;
 }
 
-
-
+#header{
+    padding: 10px 10px;
+    margin: 2px 0 0;
+}
+.flash{
+    animation: glowing 2500ms infinite;
+}
+  @keyframes glowing {
+    0% {box-shadow: 0 0 3px #6a2c70; }
+    50% { box-shadow: 0 0 40px #6a2c70; }
+    100% {  box-shadow: 0 0 3px #6a2c70; }
+  }
 
 .innerImg{
     width: 100%;
@@ -19,8 +30,13 @@ font-family: 'Red Rose', cursive;; */
 /* NAVBAR */
 .navbar{
     background-color: #6a2c70;
-    padding: 0.3%;
+    padding: 1%;
     color: #fff;
+    /* position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 11;
+    opacity: 0.6; */
 }
 .navbar-brand{
     font-size: 1.8rem !important;
@@ -219,13 +235,12 @@ a.btn{color: #fff !important;}
 }
 
 @media(max-width:780px) and (min-width:402px){
-    .card-body{padding: 1.25rem 0.4rem;
-    }
+    #header{text-align: center;}
+    .card-body{padding: 1.25rem 0.4rem;}
     .brand h1  {font-size: 2.2rem;}
-    .card-body h4{
-        font-size: 1.2rem;
+    .card-body h4{font-size: 1.2rem;
         font-weight: 600;}
-        .ccd{background: rgba(0,0,0,0.2);}
+    .ccd{background: rgba(0,0,0,0.2);}
     .carousel-caption{width: 100%; margin: 0;left: 0;}
     .carousel-caption h1, h3, .brand{ font-size: 2rem!important;}
     .carousel-caption a{ font-size: 13px;margin: 5px;}
@@ -233,8 +248,48 @@ a.btn{color: #fff !important;}
 }
 
 @media(max-width:1024px) and (min-width:768px){
+    #header{text-align: center;}
   .abtImg{height: 100%;}
   .carousel-caption h3{ font-size: 3rem;}
   .brand h1  {font-size: 2.5rem;}
 
 }
+
+/* CONTACT US */
+
+.contactus{
+    position: relative;
+  }
+  .contactpara{
+    position: absolute;
+    bottom: 8px;
+    border:solid grey 1px;
+    border-top-right-radius: 25px;
+    padding-right: 50px;
+    padding-left: 20px;
+    bottom: 30px;
+    color: white;
+     background-color: rgba(27, 13, 230, 0.6);
+  }
+
+.address{ padding: 3% 0;}
+.address h3{font-weight: 600}
+.add a, .add p{color: #6a2c70; font-weight: 600;}
+
+
+
+
+.headerButton {
+    animation: shake 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    47% { transform: translate(-10px, 0px) rotate(-2deg); }
+    48% { transform: translate(10px, 0px) rotate(2deg); }
+    49% { transform: translate(0px) rotate(0deg); }
+    50% { transform: translate(-10px, 0px) rotate(-2deg); }
+    51% { transform: translate(10px, 0px) rotate(2deg); }
+    52% { transform: translate(0px) rotate(0deg); }
+    53% { transform: translate(-10px, 0px) rotate(-2deg); }
+  }
